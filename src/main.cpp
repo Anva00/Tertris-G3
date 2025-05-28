@@ -29,7 +29,7 @@ int main()
     {
         UpdateMusicStream(game.music);
         game.HandleInput();
-        if (EventTriggered(0.2))
+        if (EventTriggered(0.02))
         {
             game.MoveBlockDown();
         }
@@ -39,7 +39,7 @@ int main()
         DrawTextEx(font, "Score", {365, 15}, 38, 2, WHITE);
         DrawTextEx(font, "Next", {370, 175}, 38, 2, WHITE);
         if (game.gameOver)
-        {
+        {  
             DrawTextEx(font, "GAME OVER", {320, 450}, 38, 2, WHITE);
         }
         DrawRectangleRounded({320, 55, 170, 60}, 0.3, 6, lightBlue);

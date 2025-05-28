@@ -1,22 +1,64 @@
-# C++ Tetris Game using raylib
+# Tetris Game
 
-🕹️🐍🎮 This GitHub repository is home to the full source code for a Tetris game built with the C++ programming language and the raylib library. 💻🎨🎧 The game uses various raylib functions for graphics, input handling, and audio and can be played on Windows, macOS, and Linux computers. 🔍📖 The code is well-structured and easy to read, making it a valuable resource for aspiring game developers looking to learn about raylib game programming.
+เกม Tetris แบบคลาสสิก สร้างขึ้นด้วยภาษา C++ ใช้งานร่วมกับ Visual Studio Code  
+โครงการนี้มีวัตถุประสงค์เพื่อฝึกฝนการเขียนโปรแกรมเชิงวัตถุและการจัดการกราฟิกพื้นฐาน
 
-If you want to learn how to build your own Tetris game with raylib, check out the accompanying <a href="https://youtu.be/wVYKG_ch4yM">Video Tutorial on YouTube.</a> 🎬👨‍💻 The tutorial guides you through every line of code, explaining the logic behind it and demonstrating how it affects the game. You'll discover how to set up the game window, create the Grid and block classes, add collision detection, and implement sound effects. By the end of the tutorial, you'll have a fully functional Tetris game that you can play and modify however you like. ☕ So, grab a cup of coffee and let's dive into the exciting world of game development with raylib! 🚀
+## 🔧 ฟีเจอร์
+- รูปแบบเกม Tetris พื้นฐาน
+- การควบคุมด้วยแป้นพิมพ์ (ซ้าย/ขวา/หมุน/เร่งความเร็ว)
+- ตรวจจับการชนและการลบแถวอัตโนมัติ
+- คะแนนสะสม
 
-# Video Tutorial
+## 📁 โครงสร้างโปรเจกต์
+Tetris/
+├── src/ // ไฟล์ source code (.cpp, .h)
+├── assets/ // ทรัพยากร เช่น ฟอนต์
+├── build/ // ไฟล์ที่คอมไพล์แล้ว
+├── README.md // ไฟล์นี้
+└── Makefile / tasks.json
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="960">
-</p>
+markdown
+Copy
+Edit
 
-<p align="center">
-🎥 <a href="https://youtu.be/wVYKG_ch4yM">Video Tutorial on YouTube</a>
-</p>
+## ▶️ วิธีการรัน
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+### 1. ติดตั้งเครื่องมือที่จำเป็น:
+- C++ Compiler (เช่น g++)
+- Visual Studio Code
+- [C/C++ Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+
+### 2. คอมไพล์และรันโปรแกรม
+หากมี Makefile:
+```bash
+make
+./tetris
+หรือคอมไพล์แบบ manual:
+
+bash
+Copy
+Edit
+g++ -o tetris src/*.cpp
+./tetris
+หรือกด "Run" ใน VS Code ถ้าตั้งค่าไว้ใน tasks.json
+
+🎮 การควบคุม
+⬅️ ลูกศรซ้าย: เลื่อนซ้าย
+
+➡️ ลูกศรขวา: เลื่อนขวา
+
+⬇️ ลูกศรลง: เร่งความเร็วการตก
+
+⬆️ ลูกศรขึ้น: หมุนบล็อก
+
+🧠 สิ่งที่ได้เรียนรู้
+การเขียนโปรแกรมเชิงวัตถุใน C++
+
+การใช้โครงสร้างข้อมูล เช่น array และ vector
+
+การจัดการกราฟิกและ input พื้นฐาน (เช่นผ่าน SFML หรือ SDL หากใช้)
+
+การจัดการการชนและลูปของเกม
+
+💡 หมายเหตุ
+โปรเจกต์นี้ยังอยู่ในระหว่างพัฒนา

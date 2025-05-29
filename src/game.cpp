@@ -68,8 +68,13 @@ void Game::HandleInput()
             case KEY_ENTER:
                 gameOver = false;
                 Reset();
+            case KEY_DOWN:
+                UpdateScore(0, 0);
+                break;
         }
+        return;
     }
+    
     switch (keyPressed)
     {
     case KEY_LEFT:

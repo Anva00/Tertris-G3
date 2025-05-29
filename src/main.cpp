@@ -67,7 +67,7 @@ int main()
     };
 
     // วาดพื้นหลัง Popup
-    DrawRectangleRounded(popupRect, 0.3, 6, lightBlue);
+    DrawRectangleRounded(popupRect, 0.3, 6, BLACK);
     DrawRectangleRoundedLinesEx(popupRect, 0.3, 6, 3, WHITE);
 
     // ข้อความ "GAME OVER"
@@ -78,7 +78,7 @@ int main()
             popupRect.x + 20, // ระยะห่างจากขอบซ้าย 20 พิกเซล
             popupRect.y + 40  // ระยะห่างจากขอบบน 40 พิกเซล
         },
-        42, 2, WHITE);
+        42, 2, GREEN);
 
     // ข้อความคะแนน
     char scoreText[20];
@@ -89,7 +89,7 @@ int main()
             popupRect.x + 20, // ระยะห่างจากขอบซ้ายเท่ากัน
             popupRect.y + 100 // ระยะห่างจากขอบบนมากขึ้น
         },
-        34, 2, WHITE);
+        34, 2, PURPLE);
 
     // ข้อความ restart
     const char* restartText = "Press Enter to Restart";
@@ -99,7 +99,7 @@ int main()
             popupRect.x + 20, // ระยะห่างจากขอบซ้ายเท่ากัน
             popupRect.y + 160 // ระยะห่างจากขอบบนมากขึ้นอีก
         },
-        28, 2, WHITE);
+        28, 2, BLUE);
 }
         EndDrawing();
     }
